@@ -1,15 +1,14 @@
 /*
 
-2.20 (Converting from seconds to hours, minutes and seconds)
-
-Write a program that asks the user to enter the total time elapsed, in seconds,
-
-since an event and converts the time to hours, minutes and seconds.
-
-The time should be displayed as hours:minutes:seconds. [Hint: Use the remainder operator]
+2.20 (Diameter, Circumference and Area of a Circle) Write a program that reads
+in the radius of a circle and prints the circle’s diameter,
+circumference and area. Use the constant value 3.14159 for π.
+Perform each of these calculations inside the printf statement(s) and
+use the conversion specifier %f. [Note: In this chapter, we’ve discussed
+only integer constants and variables. In Chapter 3 we’ll discuss floating-point numbers,
+i.e., values that can have decimal points.]
 
 */
-
 
 #include <stdio.h>
 
@@ -17,30 +16,16 @@ int main()
 
 {
 
-  //int Total_Second;
+  int radius;
 
-  int Hrs, Min, Sec;
+  printf("%s", "Insert the radius of circle : "); scanf("%d", &radius);
+  // d = C/π
+  printf("\nDiameter = %f\n", (2* 3.14159 * radius)/3.14159);
+  // C = 2 * π * radius
+  printf("Circumference = %f\n", 2 * 3.14159 * radius );
+  // A = π * r * r
+  printf("Area = %f\n", 3.14159 * (radius * radius));
 
-  printf("%s", "Enter the time elpsed in seconds: ");
-
-  scanf("%d", &Sec);
-
-  Min = Sec / 60;
-
-  Hrs = Min / 60;
-
-  if(Min >= 60)
-
-  {
-
-    Min %=  60;
-
-    Hrs = Min / 60;
-
-  }
-
-  
-
-  printf("0%d:0%d:0%d ", Hrs, Min, Sec);
+  return 0;
 
 }
