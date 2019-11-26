@@ -19,9 +19,8 @@ int main()
 
     scanf("%d %d", &x, &y);
 
-    puts("");
     // I don't need 5 variables because I don't need to save the results
-    printf("Sum : %d\n", x + y );
+    printf("\nSum : %d\n", x + y );
 
     printf("Product : %d\n", x * y );
 
