@@ -24,7 +24,7 @@ int main()
       FifthDig;
 
 printf("%s", "\nPlease, insert the five digits number : "); scanf("%d", &WholeNum);
-// using a combination between integer division and reminder operation we can easly obtain the single digits
+// using a combination between integer division and reminder operation we can easily obtain the single digits
 FirstDig  = ( WholeNum / 10000 ) % 10;
 
 SecondDig = ( WholeNum / 1000 ) % 10;
