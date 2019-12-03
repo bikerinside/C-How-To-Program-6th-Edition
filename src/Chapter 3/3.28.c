@@ -8,31 +8,30 @@ keep looping until the user enters a correct value.
 
 #include <stdio.h>
 
-/* function main begins program execution */
 int main( void )
 {
-   /* initialize variables in definitions */
-   int passes = 0; /* number of passes */
-   int failures = 0; /* number of failures */
-   int student = 1; /* student counter */
-   int result; /* one exam result */
-   /* process 10 students using counter-controlled loop */
+ 
+   int passes = 0; 
+   int failures = 0; 
+   int student = 1;
+   int result; 
+   
    while ( student <= 10 ) {
-      /* prompt user for input and obtain value from user */
+    
       printf( "Enter result ( 1=pass,2=fail ): " );  scanf( "%d", &result );
-      /* if result 1, increment passes */
+ 
       if ( result == 1 ) {
          passes = passes + 1;
 
-         student = student + 1; /* increment student counter */
+         student = student + 1;
       } /* end if */
 
       else if (result == 2) { /* otherwise, increment failures */
          failures = failures + 1;
 
          student = student + 1; /* increment student counter */
-      } /* end else */
-
+      } /* end else if*/
+   /*if user insert incorrect input the program will ask for correct input*/
       else printf("\nInsert correct input\n\a");
 
    } /* end while */
@@ -41,10 +40,9 @@ int main( void )
    printf( "Passed %d\n", passes );
    printf( "Failed %d\n", failures );
 
-   /* if more than eight students passed, print "Bonus to instructor!" */
    if ( passes > 8 ) {
       printf( "Bonus to instructor!\n" );
    } /* end if */
 
-   return 0; /* indicate program ended successfully */
-} /* end function main */
+   return 0;
+}
