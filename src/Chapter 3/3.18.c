@@ -49,41 +49,41 @@ int main ()
 {
 
 	float BegBal 	= 0.0, /*  beginning balance */
-				TotCh 	= 0.0, /*  total charges */
-				TotCr 	= 0.0, /*  total credit  */
-				CrLim 	= 0.0, /*  credit limit  */
-				EndBal  = 0.0; /*  end balance 	 */
+	      TotCh 	= 0.0, /*  total charges */
+	      TotCr 	= 0.0, /*  total credit  */
+	      CrLim 	= 0.0, /*  credit limit  */
+	      EndBal  = 0.0; /*  end balance 	 */
 
 	int AccNo 		= 0,  /* account number */
   	  FlagVal		= 0; /* flag value */
 
 	while(AccNo != -1) { /* beginning of first while-loop */
 
-	if(FlagVal == 1) /* check if account number has inserted */
+		if(FlagVal == 1) /* check if account number has inserted */
 
-	{
+		{
 
-		printf("Enter beginning balance : "); 	scanf("%f", &BegBal);
+			printf("Enter beginning balance : "); 	scanf("%f", &BegBal);
 
-		printf("Enter total charges : "); 	scanf("%f", &TotCh);
+			printf("Enter total charges : "); 	scanf("%f", &TotCh);
 
-		printf("Enter total credit : ");	scanf("%f", &TotCr);
+			printf("Enter total credit : ");	scanf("%f", &TotCr);
 
-		printf("Enter credit limit : ");	scanf("%f", &CrLim);
+			printf("Enter credit limit : ");	scanf("%f", &CrLim);
 
-		EndBal = BegBal + TotCh - TotCr; /* calculate end balance with inserted data */
+			EndBal = BegBal + TotCh - TotCr; /* calculate end balance with inserted data */
 
-			if( EndBal > CrLim ) /* check if credit limit is Exceeded */
+				if( EndBal > CrLim ) /* check if credit limit is Exceeded */
 
-			{
+				{
 
-				printf("\nAccount: %d", AccNo);
+					printf("\nAccount: %d", AccNo);
 
-				printf("\nCredit limit = %.2f", CrLim);
+					printf("\nCredit limit = %.2f", CrLim);
 
-				printf("\nBalance = %.2f", EndBal);
+					printf("\nBalance = %.2f", EndBal);
 
-				printf("\nCredit Limit Exceed.\n");
+					printf("\nCredit Limit Exceed.\n");
 
 			} /* end of second if-case */
 
