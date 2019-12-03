@@ -43,7 +43,7 @@ int main()
 
     printf("Salary is: %.2f\n", Salary);
 
-  }  /* End of the firs if-case */
+  }  /* End of the first if-case */
 
     printf("%s", "\nEnter sales in dollars ( -1 to end ): ");
 
