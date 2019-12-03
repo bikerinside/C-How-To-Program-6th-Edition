@@ -30,14 +30,14 @@ int main()
 
   float Sales         = 0.0;
 
-  int FlagVar         = 0;
+  int   FlagVar       = 0;
 
   while( Sales != -1 ) {
-    /* if FlagVat is equal to zero, it means that no data is inserted */
+    /* if FlagVar is equal to zero, it means that no data is inserted */
     if( FlagVar == 1) {
     /* Calculate salary and print the value obtained */
     printf("Salary is: %.2f\n", 200.00 + ( Sales * 0.09 ) );
-  }  /* End of the firs if-case */
+  }  /* End of the first if-case */
 
     printf("%s", "\nEnter sales in dollars ( -1 to end ): ");
 
@@ -46,8 +46,6 @@ int main()
     FlagVar = (Sales != -1) ? 1 : 0;
 
   } /* End of the main while-loop */
-
-  if(FlagVar == 0) printf("%s","\a\nGood Bye!\a\n");
 
   return 0;
 
