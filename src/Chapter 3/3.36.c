@@ -30,13 +30,13 @@ int main()
   printf("Insert binary number: "); scanf("%d", &BinaryNum);
   /* Need a copy of binary number inserted by user */
   BinaryNumCopy = BinaryNum;
-  /* The first while-loop count how many digit, the bianry number inserted by user has */
+  /* The first while-loop count how many digits, the bianry number inserted by user has */
    while( BinaryNumCopy > 0 )
   /* this while loop will stop when division between BinaryNumCopy and 10 is egual to 0 */
    {/* means that digits are over */
 
      BinaryNumCopy /= 10;
-/* Counter count digits*/
+    /* Counter count digits of BinaryNumber */
      Counter++;
 
    } /* end of the first while-loop */
