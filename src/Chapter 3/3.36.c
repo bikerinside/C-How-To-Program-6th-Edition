@@ -56,10 +56,9 @@ int main()
       Counter--;
 
   }
-
+  /* display converted number */
   printf("\nIn decimals = %d\n", ConvNum);
 
   return 0;
-
 
 }
