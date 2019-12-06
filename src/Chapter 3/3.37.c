@@ -25,10 +25,8 @@ int main()
 
       Counter++;
 
-
   }
 
   return 0;
-
 
 }
