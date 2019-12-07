@@ -39,7 +39,6 @@ int main()
 
       else
         printf("\nInserted values cannot represent the sides of triangle!\a\n");
-    
       
   return 0;
 
