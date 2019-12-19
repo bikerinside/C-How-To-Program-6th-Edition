@@ -15,6 +15,8 @@ int main()
 
   for(int i = 1; i <= 100; i++ ) 
     printf("\nn = %d\t%d", i, i*7);
+  
+  return 0;
 
 }
 
