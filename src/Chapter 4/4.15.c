@@ -17,7 +17,7 @@ int main(void)
   
   for(double rate = .05 ; rate <= .10; rate += .01){
 
-    printf("%4s%9s%21s\n","Rate", "Year", "Amount on deposit");
+    printf("%4s%9s%28s\n","Rate", "Year", "Amount on deposit");
 
    for (unsigned int year = 1; year <= 10; ++year) {
 
