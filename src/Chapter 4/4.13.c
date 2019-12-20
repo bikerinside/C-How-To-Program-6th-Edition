@@ -15,6 +15,8 @@ int main()
   int n;
 
   int sum, SumSquares, SumCubes;
+  
+  sum = SumSquares = SumCubes = 0;
 
   printf("%s", "\nInsert n : "); scanf("%d", &n);
 
