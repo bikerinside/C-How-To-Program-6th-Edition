@@ -12,10 +12,10 @@ int main()
 
 {
 
-  int n;
+  int n = 0;
 
   int sum, SumSquares, SumCubes;
-  /* init all sum variables */
+  /* init of all sum variables */
   sum = SumSquares = SumCubes = 0;
 
   printf("%s", "\nInsert n : "); scanf("%d", &n);
