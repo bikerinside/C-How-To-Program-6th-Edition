@@ -33,12 +33,13 @@ int main()
 
     Grow_Rate = (( Current_Rainfall - Highest_Rainfall ) / Highest_Rainfall ) * 100;
 
-    if(  Grow_Rate >= 1 && Grow_Rate <= 50  )
+    if(  Grow_Rate >= 1 ) 
+      if( Grow_Rate <= 50  )
           Highest_Rainfall = Current_Rainfall;
 
-    if ( Grow_Rate >= 51 && Grow_Rate < 100 )
+    if ( Grow_Rate >= 51 )
+      if( Grow_Rate < 100 )
           puts("\nThis rainfall exceed the highest rainfall in this year!");
-
 
 }
 
