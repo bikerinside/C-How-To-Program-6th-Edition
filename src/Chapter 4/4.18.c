@@ -17,8 +17,6 @@ int main()
 
   int i, j, NumAst;
 
-  
-
     for (i = 0; i < 5; i++)
 
     {
